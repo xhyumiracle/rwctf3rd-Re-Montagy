@@ -1,7 +1,7 @@
 RealWorldCTF 3rd Finals - Re:Montagy
 -----------------------
 
-## Challenge
+### Challenge
 #### Background:
 
 Hi there, I heard from my agent that many people ´\_>\` solved my challenge last year which was joyful.
@@ -24,7 +24,7 @@ $ nc <docker_ip> 10101
 
 Let the ETH balance of Montagy contract becomes 0.
 
-## Env & PoC
+### Deployment
 ```
 $ cd deploy
 $ docker build -t rwctf3rd-re-montagy .
@@ -36,5 +36,5 @@ or
 $ docker pull xhyumiracle/rwctf3rd-re-montagy
 ```
 
-## Info
+### Info
 https://ctftime.org/task/14505
