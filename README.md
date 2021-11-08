@@ -26,14 +26,12 @@ Let the ETH balance of Montagy contract becomes 0.
 
 ### Deployment
 ```
-$ cd deploy
-$ docker build -t rwctf3rd-re-montagy .
-$ docker run -d --rm -p 0.0.0.0:10101:10101 --name=chal1 -e TERM=xterm rwctf3rd-re-montagy
+$ docker run -d -p 10101:20000 --env-file .env -v `pwd`/contracts:/home/ctf/contracts -v `pwd`/challenge.yml:/home/ctf/challenge.yml chainflag/eth-challenge-base:0.9.2
 $ nc localhost 10101
 ```
 or
 ```
-$ docker pull xhyumiracle/rwctf3rd-re-montagy
+$ docker-compose up -d
 ```
 
 ### Info
